@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Biggest 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter Number 1");
+		double num1=sc.nextDouble();
+		System.out.println("Enter Number 2");
+		double num2=sc.nextDouble();
+		
+		if(num1>num2)
+		{
+		   System.out.println("Number 1 is Greater");	
+		}
+		else if(num1==num2)
+		{
+			System.out.println("Both Number 1 and Number 2 are equal");
+		}
+		else
+		{
+			System.out.println("Number 2 is Greater");  
+		}
+	}
+}

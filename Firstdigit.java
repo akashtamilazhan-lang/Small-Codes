@@ -1,0 +1,16 @@
+class FirstDigit
+{
+	public static void main(String[] args) 
+	{
+		int n=7165434;
+		
+		while(n>9)
+		{
+			int last=n%10;
+			
+			n=n/10;
+			
+		}
+		System.out.println("First Digit is====>"+n);
+	}
+}

@@ -1,0 +1,41 @@
+import java.util.*;
+class calculatorMethod
+{
+	static Scanner sc=new Scanner(System.in);
+	
+	public static void add()
+	{
+		int a=100;
+        int b=200;
+		int sum=a+b;
+		System.out.println("Addition====>"+sum);
+	}
+	public static void sub(int a,int b)
+	{
+		int sub=a-b;
+		System.out.println("Subtraction===>"+sub);
+	}
+	public static void mul()
+	{
+		System.out.println("Enter numbers to Multiply");
+		System.out.println("Enter number 1");
+		int a=sc.nextInt();
+		System.out.println("Enter number 2");
+		int b=sc.nextInt();
+		int mul=a*b;
+		System.out.println("Multiplication=====>"+mul);
+	}
+    static void m1(String name,int age)
+	{
+		System.out.println("Name===>"+name);
+		System.out.println("Age===>"+age);
+	}
+	public static void main(String[] args) 
+	{
+		add();
+		sub(10,5);
+		mul();
+		m1("Akash",25);
+		
+	}
+}

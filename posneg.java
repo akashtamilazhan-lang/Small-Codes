@@ -1,0 +1,10 @@
+class posneg 
+{
+	public static void main(String[] args) 
+	{
+		int n=10;
+		String ans=(n==0)? "zero" : n>0?"positive" : "negative";
+		System.out.println(ans);
+	}
+}
+   

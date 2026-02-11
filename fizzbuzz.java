@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class fizzbuzz 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter number:");
+		int n=sc.nextInt();
+		if(n==0)
+		{
+			System.out.println("Enter number not Zero");
+		}
+		else if(n%5==0 && n%3==0)
+		{
+			System.out.println("FizzBuzz");
+		}
+		else if (n%3==0)
+		{
+			System.out.println("Fizz");
+		}
+		else if(n%5==0)
+		{
+			System.out.println("Buzz");
+		}
+		else
+		{
+			System.out.println("No FizzBizz");
+		}
+		
+	}
+}

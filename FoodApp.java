@@ -1,0 +1,188 @@
+import java.util.*;
+class FoodApp 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Wellcome To Food Heavens");
+		System.out.println("Hotels we have......");
+		System.out.println("1.Non-Veg Heavens..\n2.Veg Hell\n3.Non-veg and Veg hotel");
+		System.out.println("Enter Your Option");
+		int option=sc.nextInt();
+		int price=0;
+		int quantity=0;
+		int bill;
+		char op;
+		int otp;
+		int userotp;
+		int order;
+		switch(option)
+		{
+			case 1:System.out.println("Welcome to Non-Veg Heavens ");
+			       System.out.println("1.Mutton Biriyani-Rs.380 \n2.Chicken Biriyani-Rs.280 \n3.Mandhi Biriyani-Rs.500 \n4.Chilli Biriyani-Rs.200");
+				   System.out.println("Enter Your Order..");
+				   order=sc.nextInt();
+				   if(order==1)
+			{
+					   System.out.println("Mutton Biriyani");
+					   price=380;
+			}else if (order==2)
+			{
+				 System.out.println("Chicken Biriyani");
+				 price=280;
+			}else if (order==3)
+			{
+				 System.out.println("Mandhi Biriyani");
+				 price=500;
+			}else if (order==3)
+			{
+				 System.out.println("Chilli Biriyani");
+				 price=200;
+			}
+			else
+				System.out.println("Wrong Option");
+			
+			System.out.print("Enter the Quantity==>");
+			quantity=sc.nextInt();
+			
+			bill=price*quantity;
+			System.out.println("Your Bill===>"+bill);
+			
+			System.out.println("Go for Payment");
+			System.out.println("Yes Y /No N");
+			op=sc.next().charAt(0);
+			if(op=='Y' || op=='y'){
+				System.out.println("Your OTP");
+				otp=(int)(Math.random()*9000)+1000;
+				System.out.println(otp);
+				System.out.println("Enter Your OTP");
+				userotp=sc.nextInt();
+				if(otp==userotp){
+					System.out.println("Your Order Placed....");
+				}else
+					System.out.println("Wrong OTP Please Check");
+			}else
+				System.out.println("Wrong Option");
+			
+			
+			break;
+			
+			
+			case 2:System.out.println("Welcome to Veg Hell");
+			 System.out.println("1.Veg Biriyani-Rs.200 \n2.Mushroom Biriyani-Rs.320 \n3.Panner Biriyani-Rs.300 \n4.Veg Meals-Rs.200");
+				   System.out.println("Enter Your Order..");
+				   order=sc.nextInt();
+				   if(order==1)
+			{
+					   System.out.println("Veg Biriyani");
+					   price=200;
+			}else if (order==2)
+			{
+				 System.out.println("Mushroom Biriyani");
+				 price=320;
+			}else if (order==3)
+			{
+				 System.out.println("Panner Biriyani");
+				 price=300;
+			}else if (order==3)
+			{
+				 System.out.println("Veg Meals");
+				 price=200;
+			}else
+				System.out.println("Wrong Option");
+			
+			
+			System.out.print("Enter the Quantity==>");
+			quantity=sc.nextInt();
+			
+			bill=price*quantity;
+			System.out.println("Your Bill===>"+bill);
+			
+			System.out.println("Go for Payment");
+			System.out.println("Yes Y /No N");
+			op=sc.next().charAt(0);
+			if(op=='Y' || op=='y'){
+				System.out.println("Your OTP");
+				otp=(int)(Math.random()*9000)+1000;
+				System.out.println(otp);
+				System.out.println("Enter Your OTP");
+				userotp=sc.nextInt();
+				if(otp==userotp){
+					System.out.println("Your Order Placed....");
+				}else
+					System.out.println("Wrong OTP Please Check");
+			}
+			break;
+			case 3:System.out.println("Welcome to Non-veg and Veg hotel");
+			System.out.println("1.Mutton Biriyani-Rs.380 \n2.Chicken Biriyani-Rs.280 \n3.Mandhi Biriyani-Rs.500 \n4.Chilli Biriyani-Rs.200\n5.Veg Biriyani-Rs.200 \n6.Mushroom Biriyani-Rs.320 \n7.Panner Biriyani-Rs.300 \n8.Veg Meals-Rs.200");
+			 System.out.println("Enter Your Order..");
+				   order=sc.nextInt();
+				   if(order==1)
+			{
+					   System.out.println("Mutton Biriyani");
+					   price=380;
+			}else if (order==2)
+			{
+				 System.out.println("Chicken Biriyani");
+				 price=280;
+			}else if (order==3)
+			{
+				 System.out.println("Mandhi Biriyani");
+				 price=500;
+			}else if (order==4)
+			{
+				 System.out.println("Chilli Biriyani");
+				 price=200;
+			}
+			 else if(order==5)
+			{
+					   System.out.println("Veg Biriyani");
+					   price=200;
+			}else if (order==6)
+			{
+				 System.out.println("Mushroom Biriyani");
+				 price=320;
+			}else if (order==7)
+			{
+				 System.out.println("Panner Biriyani");
+				 price=300;
+			}else if (order==8)
+			{
+				 System.out.println("Veg Meals");
+				 price=200;
+			}else
+				System.out.println("Wrong Option");
+			
+			System.out.print("Enter the Quantity==>");
+			quantity=sc.nextInt();
+			
+			bill=price*quantity;
+			System.out.println("Your Bill===>"+bill);
+			
+			System.out.println("Go for Payment");
+			System.out.println("Yes Y /No N");
+			op=sc.next().charAt(0);
+	
+			if(op=='Y' || op=='y'){
+				System.out.println("Your OTP");
+				otp=(int)(Math.random()*9000)+1000;
+				System.out.println(otp);
+				System.out.println("Enter Your OTP");
+				userotp=sc.nextInt();
+				if(otp==userotp){
+					System.out.println("Your Order Placed....");
+				}else
+					System.out.println("Wrong OTP Please Check");
+			}
+			else
+				System.out.println("Wrong Option");
+			
+			
+			
+			
+			break;
+			
+			default:System.out.println("Wrong option");
+		}	
+	}
+}

@@ -1,0 +1,22 @@
+class frequence
+{
+	public static void main(String[] args) 
+	{
+		for(int i=0;i<=9;i++)
+		{
+			int n=567561;
+			int co=0;
+			
+			while(n>0)
+			{
+				int ld=n%10;
+				if(ld==i)
+					co++;
+				n=n/10;
+			}
+			if(co>0)
+				System.out.println(i+" Counts "+co);
+		}
+	}
+}
+	
