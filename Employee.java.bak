@@ -1,0 +1,38 @@
+import java.util.Scanner;
+class Employee
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Employee Name:");
+	    String name=sc.next();
+		
+		System.out.println("Employee ID:");
+	    int id=sc.nextInt();
+		
+		System.out.println("Employee Age:");
+	    byte age=sc.nextByte();
+		
+		System.out.println("Contact Number:");
+	    long contact=sc.nextLong();
+		
+		System.out.println("Bonus Percentage:");
+	    float per=sc.nextFloat();
+		
+		System.out.println("Department Code:");
+	    char dept=sc.next().charAt(0);
+		
+		System.out.println("Is Employee Permanent:");
+	    boolean isPer=sc.nextBoolean();
+		
+		System.out.println("-----------------------");
+		
+		System.out.println("Employee Name is "+name);
+		System.out.println("Employee ID is "+id);
+		System.out.println("Employee Age is "+age);
+		System.out.println("Employee Contact Number is "+contact);
+		System.out.println("Bonus Percentage is "+per);
+		System.out.println("Department Number is "+dept);
+		System.out.println("Is Employee Permanent "+isPer);
+	}
+}

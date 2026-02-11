@@ -1,0 +1,9 @@
+class p6 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("\"Apple\"");
+		System.out.println("\"Bannana\"");
+		System.out.println("\"Mango\"");
+	}
+}

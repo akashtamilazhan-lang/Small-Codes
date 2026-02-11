@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class DynamicReading 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter your Name:");
+	    String name=sc.next();
+		
+		System.out.println("Enter your Age:");
+	    int age=sc.nextInt();
+		
+		System.out.println("Enter your Gender:");
+	    char gender=sc.next().charAt(0);
+		
+		System.out.println("Your Name is "+name.upper());
+		System.out.println("Your Age is "+age.upper());
+		System.out.println("Your Gender is "+gender.upper());
+	}
+}

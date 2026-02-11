@@ -1,0 +1,13 @@
+public class DefaultValue 
+{
+	public static void secondMain()
+	{
+		System.out.println("I am in Second Method");
+	}
+	public static void main(String[] args) 
+	{
+		byte a=10;
+		System.out.println(a); 
+		secondMain();
+	}
+}

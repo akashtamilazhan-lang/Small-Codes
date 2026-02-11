@@ -1,0 +1,24 @@
+class literals
+{
+	public static void main(String[] args) 
+	{
+		System.out.print("Student Name : ");
+		System.out.print("Akash");
+		System.out.println();
+		System.out.print("Student Age : ");
+		System.out.print(25);
+		System.out.println();
+		System.out.print("Student Height : ");
+		System.out.print(6.8);
+		System.out.println();
+		System.out.print("Student Gender : ");
+		System.out.print('M');
+		System.out.println();
+		System.out.print("Student Weight : ");
+		System.out.print(90);
+		System.out.println();
+		System.out.print("Student Maried Status : ");
+		System.out.print(false); 
+		System.out.println();
+	}
+}
